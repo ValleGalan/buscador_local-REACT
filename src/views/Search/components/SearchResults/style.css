@@ -1,0 +1,12 @@
+.list-data{
+    background-color: rgb(162, 41, 41);
+    width: 100%;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.list-data-item{
+    padding-top:5px;
+    background-color: gray;
+}
+/*
+style={ { backgroundColor:"",marginTop:5 } }
+*/

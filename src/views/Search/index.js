@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SearchBox from "./components/SearchBox";
 import "./style.css";
 import data from "../../data/users.json"
+import SearcResults from './components/SearchResults';
 
 export default function Search(){
 
@@ -13,7 +14,7 @@ export default function Search(){
         setResults([]);
     };
     const handleSearchClick=(searchText)=>{
-       
+       setIsAltTop(true);
         if(data?.length){ //si existe
             const searchTextMinuscula = searchText.toLowerCase();
             const filterData= data.filter( (value)=>(
@@ -33,7 +34,12 @@ export default function Search(){
 
     return(
         <div className={ `search ${isAltTop? "search--top": "search--center"} ` }>
-        <SearchBox onSearch={handleSearchClick} onClose={handleCloseSearch}></SearchBox>
+        <SearchBox
+         onSearch={handleSearchClick} 
+         onClose={handleCloseSearch}
+         isSearching={isAltTop}
+         ></SearchBox>
+        <SearcResults  results={results} isSearching={isAltTop}></SearcResults>  
         </div>
     );
 }

@@ -1,10 +1,11 @@
 /*ESTILOS GLOBALES*/
 .search{
-    height:100vh;
     display:flex;
     width:100%;
+    flex-direction: column;
 }
 .search--center{
+    height:100vh;
     justify-content: center;
     align-items: center;
 }
