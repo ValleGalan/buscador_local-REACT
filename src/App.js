@@ -1,10 +1,9 @@
-import Search from "./views/Search";
-
+import Rutas from "./routes";
  
 function App() {
   return (
     <div>
-       <Search/>
+      <Rutas> </Rutas>
     </div>
   );
 }

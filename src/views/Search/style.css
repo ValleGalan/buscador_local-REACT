@@ -1,7 +1,11 @@
 /*ESTILOS GLOBALES*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap');
+html{
+    background-color: #ECF2FF; 
+    font-family: 'Open Sans', sans-serif;
+}
 .search{
     display:flex;
-    width:100%;
     flex-direction: column;
 }
 .search--center{
@@ -12,4 +16,9 @@
 .search--top{
     justify-content: center;
     align-items: flex-start;
+}
+.box-list{
+    display:flex;
+    justify-content: center;
+    width:100%;
 }

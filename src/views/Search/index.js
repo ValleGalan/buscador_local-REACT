@@ -39,7 +39,10 @@ export default function Search(){
          onClose={handleCloseSearch}
          isSearching={isAltTop}
          ></SearchBox>
-        <SearcResults  results={results} isSearching={isAltTop}></SearcResults>  
+         <di className="box-list">
+         <SearcResults results={results} isSearching={isAltTop}></SearcResults>  
+
+         </di>
         </div>
     );
 }

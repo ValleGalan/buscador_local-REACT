@@ -10,7 +10,7 @@ export default function SearchBox( {onSearch, onClose,isSearching} ){
 return(
 
     <div className="search-box" >
-        <h2 className="search-box-title">Buscador de personal</h2>
+        <h1 className="search-box-title">Buscador de personal</h1>
         <div className="search-box-buttons">
             <label> 
                 <input 
@@ -19,7 +19,11 @@ return(
                 className="search-box-input"
                 /> 
             </label>
-            <button onClick={ ()=> onSearch(searchText) } disabled={!searchText.length} >Buscar</button>
+            <button 
+                onClick={ ()=> onSearch(searchText) } 
+                disabled={!searchText.length} 
+            >Buscar
+            </button>
             {isSearching && <button onClick={ handleSearchClick }>Cerrar</button>}
         </div>
 

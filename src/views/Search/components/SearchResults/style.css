@@ -1,11 +1,28 @@
 .list-data{
-    background-color: rgb(162, 41, 41);
-    width: 100%;
-    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 20px;
+    background-color: #BFACE2;
+    width: 60%;
+    padding: 0rem 2rem 0rem 2rem; /*top  der abajo izq*/
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .list-data-item{
     padding-top:5px;
-    background-color: gray;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+h3, p{
+    text-align:center;
+}
+button{
+    background-color: #913175;
+    color: #F5EDDC;
+    border-radius: 10px;
+    font-weight: 600;
 }
 /*
 style={ { backgroundColor:"",marginTop:5 } }
